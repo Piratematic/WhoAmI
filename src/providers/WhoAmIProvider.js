@@ -12,6 +12,10 @@ class WhoAmIProvider extends React.Component {
     updateWhoAmI: (whoami) => this.updateWhoAmI(whoami),
   };
 
+  updateWhoAmI = (whoami) => {
+    this.setState({ ...whoami });
+  }
+
   render () {
     return(
       <WhoAmIContext.Provider value={this.state}>

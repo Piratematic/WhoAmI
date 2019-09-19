@@ -13,6 +13,8 @@ class WhoAmIForm extends React.Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
+    const whoami = { ...this.state, };
+    this.props.updateWhoAmI(whoami);
   }
 
   
