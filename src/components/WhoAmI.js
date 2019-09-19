@@ -1,7 +1,6 @@
 import React from 'react';
 import { Card, } from 'semantic-ui-react';
 import { WhoAmIConsumer } from "../providers/WhoAmIProvider";
-import { __values } from 'tslib';
 
 const WhoAmI = () => (
   <WhoAmIConsumer>

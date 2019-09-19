@@ -12,17 +12,17 @@ class WhoAmIForm extends React.Component {
   handleChange = (e, { name, value }) => this.setState({ [name]: value, });  
 
   handleSubmit = (e) => {
-    e.preventDeafult();
+    e.preventDefault();
   }
 
   
     render() {
-        const { firstname, lastname, email, } = this.state;
+      const { firstname, lastname, email, } = this.state;
         return (
-            <Form onSubmit={this.handleSubmit}>
-              <Form.Input 
-                label="New First Name"
-                type="text"
+        <Form onSubmit={this.handleSubmit}>
+          <Form.Input 
+          label="New First Name"
+          type="text"
           name="firstname"
           value={firstname}
           onChange={this.handleChange}
@@ -41,7 +41,7 @@ class WhoAmIForm extends React.Component {
           value={email}
           onChange={this.handleChange}
         />
-        <Form.Buton color="blue">Save</Form.Buton>
+        <Form.Button color="blue">Save</Form.Button>
       </Form>
     )
   }
